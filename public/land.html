@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head></head>
+    <body>
+        <script>
+            try {
+                opener.authControl.addUsernameToLoginButton();
+                window.close();
+            } catch (err) {
+                opener.notify(opener.NOTIFICATIONS.ERROR, err);
+                console.log(err);
+                window.close();
+            }
+        </script>
+    </body>
+</html>
